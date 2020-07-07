@@ -18,17 +18,17 @@
                 <div class="socials">
                     <div>
                         <a href="https://github.com/RossCr0ss" target="_blank">
-                            <img src="@/assets/icons/github.png" alt="github" title="github">
+                            <img src="@/assets/icons/github-image.svg" alt="github" title="github">
                         </a>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/rostyslav-sobechko/" target="_blank">
-                            <img src="@/assets/icons/linkedin.png" alt="linkedin" title="linkedin">
+                            <img src="@/assets/icons/linkedin.svg" alt="linkedin" title="linkedin">
                         </a>
                     </div>
                     <div>
                         <a href="https://www.instagram.com/ross_cr0ss/" target="_blank">
-                            <img src="@/assets/icons/instagram-sketched.png" alt="instagram" title="instagram">
+                            <img src="@/assets/icons/instagram-sketched.svg" alt="instagram" title="instagram">
                         </a>
                     </div>
                 </div>

@@ -2,15 +2,34 @@
     <div class="header">
         <nav class="navbar">                
             <ul class="navbar__list">
-                <li class="navbar__list__item">
+                <router-link
+                    tag="li"
+                    class="navbar__list__item"
+                    to="/"
+                >
+                    <a href="#about">Home</a>
+                </router-link>
+                <router-link
+                    tag="li"
+                    class="navbar__list__item"
+                    to="/about"
+                >
                     <a href="#about">About</a>
-                </li>
-                <li class="navbar__list__item">
+                </router-link>
+                <router-link
+                    tag="li" 
+                    class="navbar__list__item"
+                    to="/portfolio"
+                >
                     <a href="#portfolio">Portfolio</a>
-                </li>
-                <li class="navbar__list__item">
+                </router-link>
+                <router-link
+                    tag="li"
+                    class="navbar__list__item"
+                    to="/contact"
+                >
                     <a href="#contact">Contact</a>
-                </li>
+                </router-link>
             </ul>
             <div
                 class="navbar__toggle"

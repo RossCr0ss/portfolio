@@ -1,5 +1,21 @@
 <template>
     <div id="app">
-        <router-view/>
+        <app-header/>
+        <main class="container">
+            <router-view/>
+        </main>
     </div>
 </template>
+
+<script>
+import Header from '@/resources/components/Header.vue'
+export default {
+    components: {
+        'app-header': Header
+    }
+}
+</script>
+
+<style>
+
+</style>
