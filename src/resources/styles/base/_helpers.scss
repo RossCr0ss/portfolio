@@ -7,8 +7,12 @@
 .container {
     max-width: $max-width; 
     width: 100%; 
-    margin: 0 auto;
+    margin: 90px auto 0;
     padding: 0 2rem;
-  }
+}
+
+.responisve_img {
+    max-width: 100%;
+}
 
   

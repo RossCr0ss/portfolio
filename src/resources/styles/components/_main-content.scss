@@ -1,0 +1,50 @@
+.main-content {
+    .profile {
+        @include flex(row stretch horizontal normal);
+
+        .image {
+            max-width: 120px;
+
+            img {
+                border-radius: 50%;
+                padding: 2px;
+                border: 1px solid #f2f3f3;
+            }
+        }
+
+        .info {
+            @include flex(vertical normal column);
+            flex: 1 1;
+            padding-left: 3rem;
+            text-align: start;
+
+            .name {
+                font-size: 1.85rem;
+                font-weight: 600;
+            }
+
+            .bio {
+                -webkit-font-smoothing: antialiased;
+                font-size: 14px;
+                font-family: lucida grande,lucida sans unicode,lucida,Helvetica Neue,Helvetica,Arial,sans-serif;
+            }
+            .socials {
+                @include flex(horizontal normal row);
+                img {
+                    width: 1.3rem;
+                    margin: 0 .6rem 0 0;
+                    cursor: pointer;
+                }
+            }
+            .contact {
+                -webkit-font-smoothing: antialiased;
+                font-size: 14px;
+                font-family: lucida grande,lucida sans unicode,lucida,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+                .email {
+                    font-family: Courier New,Courier,monospace;
+                }
+            }
+        }
+    }
+}
