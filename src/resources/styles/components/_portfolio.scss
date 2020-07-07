@@ -1,0 +1,52 @@
+.portfolio {
+    &__title {}
+    &__container {
+        .projects {
+            @include flex(horizontal normal row space-between center wrap);
+
+            .item {
+                width: 500px;
+                @include flex(horizontal normal row space-between flex-start);
+                margin: 16px;
+                
+                .info {
+                    @include flex(horizontal normal column flex-start);
+
+                    &__title {
+                        padding: 8px 0;
+                    }
+                    &__desc {
+                        padding: 4px 0;
+                        text-align: justify;
+                    }
+                    &__btn {
+                        background-color: #b53471;
+                        border: none;
+                        border-radius: .3em;
+                        color: #fff;
+                        padding: .5em 1em;
+                        margin: 1em 0;
+                        font-size: 1rem;
+                        font-family: inherit;
+                        font-weight: 400;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition-duration: .4s;
+                        cursor: pointer;
+                    }
+                }
+                .image {
+                    margin-left: 20px;
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+
+            .item:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
