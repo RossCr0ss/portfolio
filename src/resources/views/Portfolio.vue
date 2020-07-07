@@ -5,17 +5,25 @@
             <div class="projects">
                 <div 
                     class="item"
-                    v-for="item of 5"
+                    v-for="item of projects"
                     :key="item.id"
                 > 
                     <div class="info">
-                        <h4 class="info__title">Name: Earth Quotes</h4>
-                        <p class="info__desc">Description: Random quotes shown over google earth images</p>
-                        <p class="info__desc">Uses: Javascript, JQuery, Bootstrap</p>
-                        <a class="btn btn-rounded info__btn" href="https://sonorangirl.github.io/Earth-Quotes/#" role="button">View Project</a>
+                        <h4 class="info__title">Name: {{item.name}}</h4>
+                        <p class="info__desc">Description: {{item.desc}}</p>
+                        <p class="info__desc">Uses: {{item.technologies}}</p>
+                        <a
+                            class="btn btn-rounded info__btn" 
+                            :href="item.url" 
+                            role="button"
+                            target="_blank"
+                        >View Project</a>
                     </div>
                     <div class="image">
-                        <img class="responsive-img" src="https://sonorangirl.github.io/img/slice-quotes.png">
+                        <img
+                            class="responsive-img"
+                            :src="require(`@/assets/images/${item.id}.png`)"                         
+                        >
                     </div>
                 </div>
             </div>
@@ -25,7 +33,33 @@
 
 <script>
 export default {
-
+    data () {
+        return {
+            projects: [
+                {
+                    name: 'Ad project',
+                    desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
+                    technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
+                    url: 'https://github.com/RossCr0ss/ad-project',
+                    id: '1'
+                },
+                {
+                    name: 'RickAndMorty',
+                    desc: 'Application that is implemented on the API. Pagination is used to display 20 characters. You can view the character card with details.',
+                    technologies: 'Javascript, Vue.js',
+                    url: 'https://github.com/RossCr0ss/RickAndMorty',
+                    id: '2'
+                },
+                {
+                    name: 'ContactsApp',
+                    desc: '',
+                    technologies: 'Javascript, Node.js',
+                    url: 'https://github.com/RossCr0ss/ContactsApp',
+                    id: '3'
+                }
+            ]
+        }
+    }
 }
 </script>
 
