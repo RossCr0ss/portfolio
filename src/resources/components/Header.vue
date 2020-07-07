@@ -23,13 +23,14 @@
                 >
                     <a href="#portfolio">Portfolio</a>
                 </router-link>
-                <router-link
-                    tag="li"
+                <li
                     class="navbar__list__item"
-                    to="/contact"
                 >
-                    <a href="#contact">Contact</a>
-                </router-link>
+                    <a
+                        target="_blank"
+                        href="https://github.com/RossCr0ss"
+                    >Github</a>
+                </li>
             </ul>
             <div
                 class="navbar__toggle"

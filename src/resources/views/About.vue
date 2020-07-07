@@ -46,6 +46,28 @@
                     <strong>Dumbledore</strong> and other professors. I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. 💫
                     </p>
                 </div>
+                <div class="tools">
+                    <p class="text-center">Here's a few of the tools I use</p>
+                    <div class="col-xs-6">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Foundation</li>
+                        </ul>
+
+                        <ul>
+                            <li>JQuery</li>
+                            <li>Sass</li>
+                            <li>Git</li>
+                            <li>WordPress</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
             </div>
             <div class="interests">
                 <span>Interests: Quidditch and Wizard chess.</span>
