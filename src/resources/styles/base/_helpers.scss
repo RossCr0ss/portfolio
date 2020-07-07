@@ -1,0 +1,14 @@
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+  
+.container {
+    max-width: $max-width; 
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  
