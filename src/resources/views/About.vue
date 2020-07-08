@@ -11,37 +11,24 @@
         <div class="card">
             <div class="bio">
                 <div class="head">
-                    <span>Rostyslav Sobechko</span>
+                    <span>{{ fullName }}</span>
                 </div>
                 <div class="info">
-                    <span>Front-end developer</span>
+                    <span>{{ info.position }}</span>
                 </div>
                 <div class="description">
-                    <p>Courteous and enthusiastic, I am interested in IT and everything in its orbit. I recently began to be fascinated by
-                        web programming, e.g. developing apps and building websites.
-                        As this area interesting for me, I am keen to gain more experience in the field. For this reason, I am looking for a
-                        company willing to offer me a placement among their developers. In return, I would offer my full commitment, and
-                        be a pleasant and friendly addition to your team.
-                        I am therefore currently looking for a job or an internship as a front-end developer.
-                    </p>
+                    <p>{{ info.about }}</p>
                 </div>
                 <div class="tools">
                     <p class="text-center">Here's a few of the tools I use</p>
                     <div class="col-xs-6">
                         <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>TypeScript</li>
-                        </ul>
-
-                        <ul>
-                            <li>Webpack</li>
-                            <li>Sass</li>
-                            <li>Git</li>
-                            <li>Vue.js</li>
-                            <li>Node.js(Entry level)</li>
+                            <li
+                                v-for="item in info.technologies"
+                                :key="item.name"
+                            >
+                                {{item.name}}
+                            </li>
                         </ul>
                     </div>
                     
@@ -49,7 +36,26 @@
                 
             </div>
             <div class="interests">
-                <span>Interests: Films, old-school rock, travels, football</span>
+                <span>Interests: </span>
+                <ul class="list">
+                    <li
+                        v-for="item in info.interests"
+                        :key="item.name"
+                        class="list__item"
+                    >
+                        <div>
+                            <img 
+                                :src="require(`@/assets/icons/${item.imageUrl}`)"      
+                                :alt="item.name"
+                                :title="item.name"
+                                class="responsive-img"
+                            >
+                        </div>
+                        <span>
+                            {{item.name}}
+                        </span>
+                    </li>
+                </ul>
             </div>
             <div class="socials">
                 <div>
@@ -103,19 +109,20 @@
 import { mapState } from 'vuex'
 
 export default {
-   computed: {
+    data () {
+        return {
+            info: '',
+            fullName: ''
+        }
+    },
+    created () {
+        this.fullName = this.$store.getters.getFullName
+        this.info = this.$store.getters.getInfo
+    },
+    computed: {
         ...mapState({
             name: 'name'
-        })
-   }
-    
-   
-   /* {
-        name() {
-            console.log(this.$store.state.name);
-            
-            return this.$store.state.name
-        } 
-   }*/
+        }),
+    }
 }
 </script>

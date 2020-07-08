@@ -49,6 +49,22 @@
             .interests {
                 padding: 1em 1.5em;
                 border-top: 1px solid rgba(34,36,38,.1);
+
+                .list {
+                    @include flex(horizontal normal row center wrap);
+
+                    &__item {
+                        width: fit-content;
+                        margin: 8px 4px;
+                        list-style: none;
+                    }
+                }
+
+                img {
+                    width: 32px;
+                    margin: 1em;
+                    cursor: pointer;
+                }
             }
 
             .socials {
