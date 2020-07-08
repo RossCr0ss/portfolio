@@ -19,12 +19,16 @@
                             target="_blank"
                         >View Project</a>
                     </div>
-                    <div class="image">
-                        <img
-                            class="responsive-img"
-                            :src="require(`@/assets/images/${item.id}.png`)"                         
-                        >
-                    </div>
+                    <carousel>
+                        <slide>
+                            <div class="image">
+                                <img
+                                    class="responsive-img"
+                                    :src="require(`@/assets/images/${item.img}`)"                         
+                                >
+                            </div>
+                        </slide>
+                    </carousel>
                 </div>
             </div>
         </div>
@@ -32,7 +36,13 @@
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
+    components: {
+        Carousel,
+        Slide
+    },
     data () {
         return {
             projects: [
@@ -41,21 +51,21 @@ export default {
                     desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
                     technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
                     url: 'https://github.com/RossCr0ss/ad-project',
-                    id: '1'
+                    img: '1.png'
                 },
                 {
                     name: 'RickAndMorty',
                     desc: 'Application that is implemented on the API. Pagination is used to display 20 characters. You can view the character card with details.',
                     technologies: 'Javascript, Vue.js',
                     url: 'https://github.com/RossCr0ss/RickAndMorty',
-                    id: '2'
+                    img: '2.png'
                 },
                 {
                     name: 'ContactsApp',
                     desc: '',
                     technologies: 'Javascript, Node.js',
                     url: 'https://github.com/RossCr0ss/ContactsApp',
-                    id: '3'
+                    img: '3.png'
                 }
             ]
         }
