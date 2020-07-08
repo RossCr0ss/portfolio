@@ -11,39 +11,18 @@
         <div class="card">
             <div class="bio">
                 <div class="head">
-                    <span>Harry Potter</span>
+                    <span>Rostyslav Sobechko</span>
                 </div>
                 <div class="info">
-                    <span>Student at Hogwarts School</span>
+                    <span>Front-end developer</span>
                 </div>
                 <div class="description">
-                    <p>I attended
-                        <a
-                            href="https://en.wikipedia.org/wiki/Hogwarts"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        > Hogwarts School of Witchcraft and Wizardry
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 100 100"
-                                width="15"
-                                height="15"
-                                class="icon outbound"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-                                />
-                                <polygon
-                                    fill="currentColor"
-                                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-                                />
-                            </svg>
-                        </a> to study witchcraft, supervised by
-                    <strong>Dumbledore</strong> and other professors. I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. 💫
+                    <p>Courteous and enthusiastic, I am interested in IT and everything in its orbit. I recently began to be fascinated by
+                        web programming, e.g. developing apps and building websites.
+                        As this area interesting for me, I am keen to gain more experience in the field. For this reason, I am looking for a
+                        company willing to offer me a placement among their developers. In return, I would offer my full commitment, and
+                        be a pleasant and friendly addition to your team.
+                        I am therefore currently looking for a job or an internship as a front-end developer.
                     </p>
                 </div>
                 <div class="tools">
@@ -54,15 +33,15 @@
                             <li>CSS3</li>
                             <li>Javascript</li>
                             <li>Bootstrap</li>
-                            <li>Foundation</li>
+                            <li>TypeScript</li>
                         </ul>
 
                         <ul>
-                            <li>JQuery</li>
+                            <li>Webpack</li>
                             <li>Sass</li>
                             <li>Git</li>
-                            <li>WordPress</li>
-                            <li>PHP</li>
+                            <li>Vue.js</li>
+                            <li>Node.js(Entry level)</li>
                         </ul>
                     </div>
                     
@@ -70,7 +49,7 @@
                 
             </div>
             <div class="interests">
-                <span>Interests: Quidditch and Wizard chess.</span>
+                <span>Interests: Films, old-school rock, travels, football</span>
             </div>
             <div class="socials">
                 <div>
@@ -104,10 +83,11 @@
                     <a href="/projects/" target class="button">Projects</a>
                 </div>
                 <div>
-                    <a href="https://github.com/mtobeiyf" target="_blank" class="button">Blog</a>
-                </div>
-                <div>
-                    <a href="/article/" target class="button">CV</a>
+                    <a
+                        href="https://drive.google.com/file/d/1MzS8NqEotF7DwQb6bDPwNeOchvzoUZVf/view?usp=sharing"
+                        target="_blank"
+                        class="button"
+                    >CV</a>
                 </div>
             </div>
         </div>

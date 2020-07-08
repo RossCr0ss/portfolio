@@ -10,10 +10,10 @@
             </div>
             <div class="info">
                 <div class="name">
-                Harry Potter
+                {{name}}
                 </div>
                 <div class="bio">
-                    <p>Student at Hogwarts School</p>
+                    <p>Front-end developer</p>
                 </div>
                 <div class="socials">
                     <div>
@@ -36,7 +36,11 @@
                     <div title="Contact me" class="email">{{ email }}</div>
                 </div>
                 <div>
-                    <a target="_blank" href="https://en.wikipedia.org/wiki/Harry_Potter" title="Download my CV in PDF">
+                    <a
+                        target="_blank"
+                        href="https://drive.google.com/file/d/1MzS8NqEotF7DwQb6bDPwNeOchvzoUZVf/view?usp=sharing"
+                        title="Download my CV in PDF"
+                    >
                         <font size="2em" color=""><b>[CV]</b></font>
                     </a>
                 </div>
@@ -44,14 +48,18 @@
         </div>
 
         <h2 id="about-me">About Me</h2>
-        <p>I attended
-            <a href="https://en.wikipedia.org/wiki/Hogwarts" target="_blank" rel="noopener noreferrer">Hogwarts School of Witchcraft and Wizardry
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                    <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path>
-                    <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon>
-                </svg>
-            </a> to study witchcraft, supervised by <strong>Dumbledore</strong> and other professors.</p>
-        <p>I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. 💫</p>
+        <p>
+            Courteous and enthusiastic, I am interested in IT and everything in its orbit. I recently began to be fascinated by
+            web programming, e.g. developing apps and building websites.
+        </p>
+        <p>
+            As this area interesting for me, I am keen to gain more experience in the field. For this reason, I am looking for a
+            company willing to offer me a placement among their developers. In return, I would offer my full commitment, and
+            be a pleasant and friendly addition to your team.
+        </p>
+        <p>
+            I am therefore currently looking for a job or an internship as a front-end developer.
+        </p>
         
         <h2 id="news">News</h2>
         <ul>
@@ -61,7 +69,9 @@
 
         <h2 id="education-experiences">Education &amp; Experiences</h2>
         <ul>
-            <li><strong>Hogwarts School of Witchcraft and Wizardry</strong> <br>Sept 1991 - 1997</li>
+            <li><strong>Lviv Polytechnic National University</strong> <br>Sept 2014 - Jan 2020</li>
+            <li><strong>Okten Web University</strong> <br>Feb 2019 - July 2019</li>
+            <li><strong>Incora Coding Camp</strong> <br>Aug 2019 - Oct 2019</li>
         </ul>
 
         <h2 id="projects">Projects</h2>
@@ -101,6 +111,7 @@
 export default {
     data () {
         return {
+            name: 'Rostyslav Sobechko',
             email: 'sobechko.r@gmail.com'
         }
     }
