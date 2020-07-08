@@ -80,7 +80,11 @@
             </div>
             <div class="actions">
                 <div>
-                    <a href="/projects/" target class="button">Projects</a>
+                    <a
+                        href="/projects/"
+                        target="_blank"
+                        class="button"
+                    >Projects</a>
                 </div>
                 <div>
                     <a
@@ -96,5 +100,22 @@
 </template>
 
 <script>
-export default {};
+import { mapState } from 'vuex'
+
+export default {
+   computed: {
+        ...mapState({
+            name: 'name'
+        })
+   }
+    
+   
+   /* {
+        name() {
+            console.log(this.$store.state.name);
+            
+            return this.$store.state.name
+        } 
+   }*/
+}
 </script>
