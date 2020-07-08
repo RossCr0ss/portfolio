@@ -61,11 +61,11 @@
             I am therefore currently looking for a job or an internship as a front-end developer.
         </p>
         
-        <h2 id="news">News</h2>
+        <!-- <h2 id="news">News</h2>
         <ul>
             <li>[Sept 1991] Attended Hogwarts</li>
             <li>[July 1980] Born in Godric's Hollow, West Country, England, Great Britain</li>
-        </ul>
+        </ul> -->
 
         <h2 id="education-experiences">Education &amp; Experiences</h2>
         <ul>
@@ -78,7 +78,7 @@
         <p>
             <a href="/projects/" class="">→ Full list</a>
         </p>
-        <div class="md-card">
+       <!--  <div class="md-card">
             <div class="card-image">
                 <img src="/projects/1.png" alt="">
             </div>
@@ -102,7 +102,7 @@
                 </p>
             </div>
         </div>
-
+ -->
 
     </div>
 </template>

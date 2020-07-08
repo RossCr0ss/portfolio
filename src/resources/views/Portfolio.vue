@@ -8,6 +8,26 @@
                     v-for="item of projects"
                     :key="item.id"
                 > 
+                    <carousel 
+                        :perPageCustom="[[768, 1], [1440, 2]]"
+                        :scrollPerPage="true"
+                        navigationEnabled
+                        paginationColor="#6ebbc0"
+                        paginationActiveColor="#000"
+                        autoplay
+                    >
+                        <slide 
+                            v-for="image in item.images" 
+                            :key="image.id"
+                        >
+                            <div class="image">
+                                <img
+                                    class="responsive-img"
+                                    :src="require(`@/assets/images/${image.url}`)"                         
+                                >
+                            </div>
+                        </slide>
+                    </carousel>
                     <div class="info">
                         <h4 class="info__title">Name: {{item.name}}</h4>
                         <p class="info__desc">Description: {{item.desc}}</p>
@@ -19,16 +39,6 @@
                             target="_blank"
                         >View Project</a>
                     </div>
-                    <carousel>
-                        <slide>
-                            <div class="image">
-                                <img
-                                    class="responsive-img"
-                                    :src="require(`@/assets/images/${item.img}`)"                         
-                                >
-                            </div>
-                        </slide>
-                    </carousel>
                 </div>
             </div>
         </div>
@@ -45,31 +55,12 @@ export default {
     },
     data () {
         return {
-            projects: [
-                {
-                    name: 'Ad project',
-                    desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
-                    technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
-                    url: 'https://github.com/RossCr0ss/ad-project',
-                    img: '1.png'
-                },
-                {
-                    name: 'RickAndMorty',
-                    desc: 'Application that is implemented on the API. Pagination is used to display 20 characters. You can view the character card with details.',
-                    technologies: 'Javascript, Vue.js',
-                    url: 'https://github.com/RossCr0ss/RickAndMorty',
-                    img: '2.png'
-                },
-                {
-                    name: 'ContactsApp',
-                    desc: '',
-                    technologies: 'Javascript, Node.js',
-                    url: 'https://github.com/RossCr0ss/ContactsApp',
-                    img: '3.png'
-                }
-            ]
+            projects: []
         }
-    }
+    },
+    created () {
+        this.projects = this.$store.getters.getProjects
+    },
 }
 </script>
 

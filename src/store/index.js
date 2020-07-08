@@ -92,7 +92,49 @@ export default new Vuex.Store({
                 },
             ]
         },
-        projects: []
+        projects: [
+            {
+                name: 'Ad project',
+                desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
+                technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
+                url: 'https://github.com/RossCr0ss/ad-project',
+                images: [
+                    {
+                        url: 'ad-project/image1.png' 
+                    },
+                    {
+                        url: 'ad-project/image2.png' 
+                    },
+                    {
+                        url: 'ad-project/image3.png' 
+                    },
+                    {
+                        url: 'ad-project/image4.png' 
+                    },
+                    {
+                        url: 'ad-project/image5.png' 
+                    },
+                    {
+                        url: 'ad-project/image6.png' 
+                    },
+                    {
+                        url: 'ad-project/image7.png' 
+                    },
+                    {
+                        url: 'ad-project/image8.png' 
+                    },
+                    {
+                        url: 'ad-project/image9.png' 
+                    },
+                    {
+                        url: 'ad-project/image10.png' 
+                    },
+                    {
+                        url: 'ad-project/image11.png' 
+                    }
+                ]
+            }
+        ]
     },
     mutations: {
     },
@@ -104,6 +146,9 @@ export default new Vuex.Store({
         },
         getFullName (state) {
             return state.info.name + ' ' + state.info.surname
+        },
+        getProjects (state) {
+            return state.projects
         }
     }
 })
