@@ -12,8 +12,7 @@
                         :perPageCustom="[[768, 1], [1440, 2]]"
                         :scrollPerPage="true"
                         navigationEnabled
-                        paginationColor="#6ebbc0"
-                        paginationActiveColor="#000"
+                        :paginationEnabled="false"
                         autoplay
                     >
                         <slide 

@@ -187,6 +187,77 @@ export default new Vuex.Store({
                         url: 'contactApp/image5.png' 
                     }
                 ]
+            },
+            {
+                name: 'Fusion',
+                desc: 'Multi-page site for cryptocurrency trading, with the possibility of logging in, binary tree, currency and package calculators, etc.',
+                technologies: 'Javascript, Vue.js, Webpack',
+                url: 'https://fusion-world.club/',
+                images: [
+                    {
+                        url: 'Fusion/image1.png' 
+                    },
+                    {
+                        url: 'Fusion/image2.png' 
+                    },
+                    {
+                        url: 'Fusion/image3.png' 
+                    },
+                    {
+                        url: 'Fusion/image4.png' 
+                    },
+                    {
+                        url: 'Fusion/image5.png' 
+                    },
+                    {
+                        url: 'Fusion/image6.png' 
+                    },
+                    {
+                        url: 'Fusion/image7.png' 
+                    },
+                    {
+                        url: 'Fusion/image8.png' 
+                    },
+                    {
+                        url: 'Fusion/image9.png' 
+                    },
+                    {
+                        url: 'Fusion/image10.png' 
+                    },
+                    {
+                        url: 'Fusion/image11.png' 
+                    },
+                    {
+                        url: 'Fusion/image12.png' 
+                    },
+                    {
+                        url: 'Fusion/image13.png' 
+                    },
+                    {
+                        url: 'Fusion/image14.png' 
+                    },
+                    {
+                        url: 'Fusion/image15.png' 
+                    },
+                    {
+                        url: 'Fusion/image16.png' 
+                    },
+                    {
+                        url: 'Fusion/image17.png' 
+                    },
+                    {
+                        url: 'Fusion/image18.png' 
+                    },
+                    {
+                        url: 'Fusion/image19.png' 
+                    },
+                    {
+                        url: 'Fusion/image20.png' 
+                    },
+                    {
+                        url: 'Fusion/image21.png' 
+                    }
+                ]
             }
         ]
     },
