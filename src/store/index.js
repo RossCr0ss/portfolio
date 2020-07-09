@@ -147,13 +147,45 @@ export default new Vuex.Store({
             },
             {
                 name: 'RickAndMorty',
-                desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
-                technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
-                url: 'https://github.com/RossCr0ss/ad-project',
+                desc: 'Application that is implemented on the API. Pagination is used to display 20 characters. You can view their character card',
+                technologies: 'Javascript, Vue.js, The Rick and Morty API',
+                url: 'https://github.com/RossCr0ss/RickAndMorty',
                 images: [
                     {
-                        url: 'ad-project/image1.png' 
+                        url: 'RickAndMorty/image1.png' 
                     },
+                    {
+                        url: 'RickAndMorty/image2.png' 
+                    },
+                    {
+                        url: 'RickAndMorty/image3.png' 
+                    },
+                    {
+                        url: 'RickAndMorty/image4.png' 
+                    }
+                ]
+            },
+            {
+                name: 'ContactApp',
+                desc: 'Application to save phone contacts.',
+                technologies: 'Javascript, Vue.js',
+                url: 'https://github.com/RossCr0ss/ContactsApp',
+                images: [
+                    {
+                        url: 'contactApp/image1.png' 
+                    },
+                    {
+                        url: 'contactApp/image2.png' 
+                    },
+                    {
+                        url: 'contactApp/image3.png' 
+                    },
+                    {
+                        url: 'contactApp/image4.png' 
+                    },
+                    {
+                        url: 'contactApp/image5.png' 
+                    }
                 ]
             }
         ]
