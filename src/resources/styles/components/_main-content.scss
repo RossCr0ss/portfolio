@@ -50,4 +50,32 @@
     p {
         text-align: justify;
     }
+
+    .education_list {
+        @include flex(column flex-start stretch horizontal normal);
+
+        li {
+            list-style: none;
+            padding: 4px 0;
+        }
+    }
+
+    .project {
+        width: 100%;
+        @include flex(column center horizontal normal);
+
+        .VueCarousel {
+            width: calc(100% - 32px);
+            
+            &-dot-container {
+                margin-top: 0 !important;
+            }
+        }
+        .image {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

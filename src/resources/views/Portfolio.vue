@@ -29,7 +29,7 @@
                         </slide>
                     </carousel>
                     <div class="info">
-                        <h4 class="info__title">Name: {{item.name}}</h4>
+                        <h4 class="info__title">{{item.name}}</h4>
                         <p class="info__desc">Description: {{item.desc}}</p>
                         <p class="info__desc">Uses: {{item.technologies}}</p>
                         <a

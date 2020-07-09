@@ -61,14 +61,8 @@
             I am therefore currently looking for a job or an internship as a front-end developer.
         </p>
         
-        <!-- <h2 id="news">News</h2>
-        <ul>
-            <li>[Sept 1991] Attended Hogwarts</li>
-            <li>[July 1980] Born in Godric's Hollow, West Country, England, Great Britain</li>
-        </ul> -->
-
         <h2 id="education-experiences">Education &amp; Experiences</h2>
-        <ul>
+        <ul class="education_list">
             <li><strong>Lviv Polytechnic National University</strong> <br>Sept 2014 - Jan 2020</li>
             <li><strong>Okten Web University</strong> <br>Feb 2019 - July 2019</li>
             <li><strong>Incora Coding Camp</strong> <br>Aug 2019 - Oct 2019</li>
@@ -76,43 +70,69 @@
 
         <h2 id="projects">Projects</h2>
         <p>
-            <a href="/projects/" class="">→ Full list</a>
+            <a href="/portfolio/" class="">→ Full list</a>
         </p>
-       <!--  <div class="md-card">
-            <div class="card-image">
-                <img src="/projects/1.png" alt="">
-            </div>
-            <div class="card-content">
-                <p><strong>The Making of Harry Potter's Wand</strong></p>
-                <p>Harry P., Hermione G., <em>et al</em></p>
-                <p>Harry's wand was broken in 1997, but was repaired by him after the 1998 Battle of Hogwarts. Usually the repair of a wand is impossible, but with the use of the Elder Wand it was achievable.</p>
-                <p>[
-                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">PDF
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                            <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> 
-                            <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon>
-                        </svg>
-                    </a>] [
-                    <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                            <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path>
-                            <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon>
-                        </svg>
-                    </a>]
-                </p>
-            </div>
+
+        <div class="project">
+            
+            <carousel 
+                :perPageCustom="[[768, 1], [1440, 2]]"
+                :scrollPerPage="true"
+                navigationEnabled
+                paginationColor="#6ebbc0"
+                paginationActiveColor="#000"
+                autoplay
+            >
+                <slide 
+                    v-for="image in randomProject.images" 
+                    :key="image.id"
+                >
+                    <div class="image">
+                        <img
+                            class="responsive-img"
+                            :src="require(`@/assets/images/${image.url}`)"                         
+                        >
+                    </div>
+                </slide>
+            </carousel>
+
+            <h2>{{randomProject.name}}</h2>
+            <p>Description: {{randomProject.desc}}</p>
+            <p>Uses: {{randomProject.technologies}}</p>
+            
         </div>
- -->
+
 
     </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
+    components: {
+        Carousel,
+        Slide
+    },
     data () {
         return {
             name: 'Rostyslav Sobechko',
-            email: 'sobechko.r@gmail.com'
+            email: 'sobechko.r@gmail.com',
+            projects: [],
+            randomProject: ''
+        }
+    },
+    created () {
+        this.projects = this.$store.getters.getProjects
+        this.getRandomProject ()
+    },
+    methods: {
+        getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        },
+        getRandomProject () {
+            this.randomProject = this.projects[this.getRandomInt(this.projects.length)]
+            console.log(this.randomProject);
         }
     }
 }

@@ -133,6 +133,17 @@ export default new Vuex.Store({
                         url: 'ad-project/image11.png' 
                     }
                 ]
+            },
+            {
+                name: 'RickAndMorty',
+                desc: 'An application that resembles an online store (has a shopping cart, edit menu, authorization)',
+                technologies: 'Javascript, Vue.js, Vuetify, Google Firebase',
+                url: 'https://github.com/RossCr0ss/ad-project',
+                images: [
+                    {
+                        url: 'ad-project/image1.png' 
+                    },
+                ]
             }
         ]
     },
