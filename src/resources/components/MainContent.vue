@@ -66,6 +66,7 @@
             <li><strong>Lviv Polytechnic National University</strong> <br>Sept 2014 - Jan 2020</li>
             <li><strong>Okten Web University</strong> <br>Feb 2019 - July 2019</li>
             <li><strong>Incora Coding Camp</strong> <br>Aug 2019 - Oct 2019</li>
+            <li><strong>NewVeer</strong> <br>Jan 2020 - July 2020</li>
         </ul>
 
         <h2 id="projects">Projects</h2>
