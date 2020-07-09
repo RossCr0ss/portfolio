@@ -14,48 +14,59 @@ export default new Vuex.Store({
             technologies: [
                 {
                     name: 'HTML5',
-                    level: 10
+                    level: 10,
+                    imageUrl: 'html5.svg'
                 },
                 {
                     name: 'CSS3',
-                    level: 10
+                    level: 10,
+                    imageUrl: 'css.svg'
                 },
                 {
                     name: 'Javascript',
-                    level: 7
+                    level: 7,
+                    imageUrl: 'javascript.svg'
                 },
                 {
                     name: 'TypeScript',
-                    level: 5
+                    level: 5,
+                    imageUrl: 'typescript.svg'
                 },
                 {
                     name: 'Bootstrap',
-                    level: 4
+                    level: 4,
+                    imageUrl: 'bootstrap.svg'
                 },
                 {
                     name: 'Webpack',
-                    level: 5
+                    level: 5,
+                    imageUrl: 'webpack.svg'
                 },
                 {
                     name: 'Sass',
-                    level: 8
+                    level: 8,
+                    imageUrl: 'sass.svg'
                 },
                 {
                     name: 'Git',
-                    level: 5
+                    level: 5,
+                    imageUrl: 'git.svg'
                 },
                 {
                     name: 'Vue.js',
-                    level: 6
+                    level: 6,
+                    imageUrl: 'vue.svg'
                 },
                 {
                     name: 'Angular 2+',
-                    level: 6
+                    level: 6,
+                    imageUrl: 'angular.svg'
                 },
                 {
                     name: 'Node.js',
-                    level: 2
-                },
+                    level: 2,
+                    imageUrl: 'node.svg'
+                }
             ],
             interests: [
                 {

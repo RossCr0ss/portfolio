@@ -21,17 +21,24 @@
                 </div>
                 <div class="tools">
                     <p class="text-center">Here's a few of the tools I use</p>
-                    <div class="col-xs-6">
-                        <ul>
-                            <li
-                                v-for="item in info.technologies"
-                                :key="item.name"
-                            >
-                                {{item.name}}
-                            </li>
-                        </ul>
-                    </div>
                     
+                    <ul class="list">
+                        <li
+                            v-for="item in info.technologies"
+                            :key="item.name"
+                            class="list__item"
+                        >
+                            <div>
+                                <img
+                                    :src="require(`@/assets/icons/${item.imageUrl}`)"   
+                                    :alt="item.name"
+                                    :title="item.name"
+                                    class="responsive-img"
+                                >
+                            </div>
+                            <span >{{item.name}}</span>
+                        </li>
+                    </ul>               
                 </div>
                 
             </div>
@@ -87,10 +94,10 @@
             <div class="actions">
                 <div>
                     <a
-                        href="/projects/"
+                        href="/portfolio/"
                         target="_blank"
                         class="button"
-                    >Projects</a>
+                    >Portfolio</a>
                 </div>
                 <div>
                     <a
@@ -123,6 +130,10 @@ export default {
         ...mapState({
             name: 'name'
         }),
+        getImgUrl(img) {
+            var images = require.context('@/assets/', false, /\.svg$/)
+            return images('./' + img + ".svg")
+        }
     }
 }
 </script>
